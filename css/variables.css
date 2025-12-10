@@ -1,0 +1,152 @@
+/* Design Tokens - Danubius EdTech */
+
+:root {
+  /* Primary Colors - Professional Blues */
+  --color-primary-900: #0a2540;
+  --color-primary-800: #0d3056;
+  --color-primary-700: #124a7a;
+  --color-primary-600: #1a5f97;
+  --color-primary-500: #2176b8;
+  --color-primary-400: #3d8fd0;
+  --color-primary-300: #6ab0e3;
+  --color-primary-200: #a3d1f2;
+  --color-primary-100: #d6ebfa;
+  --color-primary-50: #eef7fd;
+
+  /* Secondary Colors - Warm Greens (Education/Growth) */
+  --color-secondary-900: #0d4a3a;
+  --color-secondary-800: #116b53;
+  --color-secondary-700: #168d6c;
+  --color-secondary-600: #1daa83;
+  --color-secondary-500: #26c999;
+  --color-secondary-400: #4dd9ad;
+  --color-secondary-300: #7ae5c3;
+  --color-secondary-200: #a8f0d8;
+  --color-secondary-100: #d4f8ec;
+  --color-secondary-50: #edfcf6;
+
+  /* Accent Colors - Warm Coral (CTAs & Highlights) */
+  --color-accent-600: #d65a31;
+  --color-accent-500: #e8734e;
+  --color-accent-400: #f08c6b;
+  --color-accent-300: #f5a98e;
+  --color-accent-200: #fac7b5;
+  --color-accent-100: #fde4db;
+
+  /* Neutral Colors */
+  --color-neutral-900: #1a1a2e;
+  --color-neutral-800: #2d2d44;
+  --color-neutral-700: #434361;
+  --color-neutral-600: #5c5c7a;
+  --color-neutral-500: #787896;
+  --color-neutral-400: #9898b0;
+  --color-neutral-300: #b8b8ca;
+  --color-neutral-200: #d8d8e4;
+  --color-neutral-100: #ededf4;
+  --color-neutral-50: #f7f7fb;
+  --color-white: #ffffff;
+
+  /* Semantic Colors */
+  --color-success: #26c999;
+  --color-warning: #f5a623;
+  --color-error: #e53935;
+  --color-info: #2176b8;
+
+  /* Typography */
+  --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-display: 'Plus Jakarta Sans', var(--font-family-primary);
+
+  /* Font Sizes - Using fluid typography */
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --font-size-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --font-size-base: clamp(1rem, 0.925rem + 0.375vw, 1.125rem);
+  --font-size-lg: clamp(1.125rem, 1rem + 0.625vw, 1.375rem);
+  --font-size-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.625rem);
+  --font-size-2xl: clamp(1.5rem, 1.25rem + 1.25vw, 2.125rem);
+  --font-size-3xl: clamp(1.875rem, 1.5rem + 1.875vw, 2.875rem);
+  --font-size-4xl: clamp(2.25rem, 1.75rem + 2.5vw, 3.75rem);
+  --font-size-5xl: clamp(3rem, 2.25rem + 3.75vw, 5rem);
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 1.75;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+  --space-40: 10rem;
+
+  /* Container Widths */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+  --transition-bounce: 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* Z-Index Scale */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}
+
+/* Dark mode variables (future-ready) */
+@media (prefers-color-scheme: dark) {
+  :root.dark-mode {
+    --color-bg-primary: var(--color-neutral-900);
+    --color-bg-secondary: var(--color-neutral-800);
+    --color-text-primary: var(--color-neutral-50);
+    --color-text-secondary: var(--color-neutral-300);
+  }
+}
