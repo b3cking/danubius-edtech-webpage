@@ -904,6 +904,14 @@
   padding-left: var(--space-6);
 }
 
+.blog-post__content ul {
+  list-style: disc;
+}
+
+.blog-post__content ol {
+  list-style: decimal;
+}
+
 .blog-post__content li {
   margin-bottom: var(--space-3);
   line-height: var(--line-height-relaxed);
