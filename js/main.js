@@ -214,10 +214,6 @@
       contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
 
-        // Basic validation is handled by HTML5
-        // Here you would typically send the form data to a server
-
-        // Simulate form submission
         const submitButton = contactForm.querySelector('button[type="submit"]');
         const originalText = submitButton.innerHTML;
 
@@ -231,19 +227,34 @@
           Sending...
         `;
 
-        // Simulate API call delay
-        setTimeout(function() {
-          // Show success message
-          contactForm.style.display = 'none';
-          formSuccess.style.display = 'block';
+        // Submit to Formspree
+        const formData = new FormData(contactForm);
 
-          // Reset button state for next time
+        fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+        .then(function(response) {
+          if (response.ok) {
+            contactForm.style.display = 'none';
+            formSuccess.style.display = 'block';
+            formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            contactForm.reset();
+          } else {
+            throw new Error('Form submission failed');
+          }
+        })
+        .catch(function(error) {
+          alert('There was a problem sending your message. Please try again or email us directly.');
+          console.error('Form error:', error);
+        })
+        .finally(function() {
           submitButton.disabled = false;
           submitButton.innerHTML = originalText;
-
-          // Scroll success message into view
-          formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 1500);
+        });
       });
 
       // Real-time validation feedback

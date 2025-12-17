@@ -29,6 +29,7 @@
 
 .btn--primary:hover {
   background-color: var(--color-primary-700);
+  color: var(--color-white);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -52,6 +53,7 @@
 
 .btn--accent:hover {
   background-color: var(--color-accent-600);
+  color: var(--color-white);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -63,6 +65,7 @@
 
 .btn--white:hover {
   background-color: var(--color-neutral-50);
+  color: var(--color-primary-700);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -129,17 +132,12 @@
 .nav__logo {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  font-family: var(--font-family-display);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-xl);
-  color: var(--color-primary-700);
   text-decoration: none;
 }
 
-.nav__logo-icon {
-  width: 40px;
-  height: 40px;
+.nav__logo-img {
+  height: 62px;
+  width: auto;
 }
 
 .nav__menu {
@@ -747,6 +745,144 @@
 }
 
 /* ===================
+   BETT BANNER
+   =================== */
+.bett-banner {
+  background: linear-gradient(135deg, var(--color-primary-700) 0%, var(--color-primary-900) 50%, var(--color-secondary-800) 100%);
+  padding: var(--space-12) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bett-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 20% 80%, rgba(38, 201, 153, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(33, 118, 184, 0.2) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.bett-banner__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .bett-banner__content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.bett-banner__info {
+  flex: 1;
+  max-width: 700px;
+}
+
+.bett-banner__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  color: var(--color-white);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bett-banner__badge svg {
+  color: var(--color-secondary-400);
+}
+
+.bett-banner__title {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-4);
+}
+
+.bett-banner__text {
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-6);
+}
+
+.bett-banner__text strong {
+  color: var(--color-secondary-300);
+  font-weight: var(--font-weight-semibold);
+}
+
+.bett-banner__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4) var(--space-6);
+}
+
+.bett-banner__detail {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--font-size-sm);
+}
+
+.bett-banner__detail svg {
+  color: var(--color-secondary-400);
+}
+
+.bett-banner__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-3);
+}
+
+@media (min-width: 768px) {
+  .bett-banner__cta {
+    align-items: flex-end;
+    text-align: right;
+  }
+}
+
+.bett-banner__btn {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+}
+
+.bett-banner__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.bett-banner__note {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 200px;
+}
+
+/* BETT Banner Inline - for placement within content */
+.bett-banner--inline {
+  padding: var(--space-8);
+}
+
+/* ===================
    FOOTER
    =================== */
 .footer {
@@ -776,17 +912,15 @@
 .footer__logo {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  font-family: var(--font-family-display);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-xl);
-  color: var(--color-white);
   margin-bottom: var(--space-4);
 }
 
-.footer__logo svg {
-  width: 36px;
-  height: 36px;
+.footer__logo-img {
+  height: 62px;
+  width: auto;
+  background: white;
+  padding: 2px 4px;
+  border-radius: 3px;
 }
 
 .footer__tagline {
@@ -1059,6 +1193,22 @@
   max-width: 600px;
   margin-inline: auto;
   margin-bottom: var(--space-8);
+}
+
+.cta-section__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-6);
+  margin-bottom: var(--space-6);
+  font-size: var(--font-size-base);
+  color: var(--color-primary-200);
+}
+
+.cta-section__details span {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
 }
 
 .cta-section__buttons {

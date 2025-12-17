@@ -267,8 +267,8 @@ a {
     padding-block: var(--space-3);
   }
 
-  .nav__logo span {
-    font-size: var(--font-size-lg);
+  .nav__logo-img {
+    height: 42px;
   }
 }
 
