@@ -1053,10 +1053,17 @@
   margin-bottom: var(--space-2);
 }
 
+.contact-card__info {
+  min-width: 0;
+  overflow: hidden;
+}
+
 .contact-card__email {
   font-size: var(--font-size-sm);
   color: var(--color-primary-600);
   font-weight: var(--font-weight-medium);
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 /* ===================

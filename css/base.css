@@ -22,6 +22,7 @@ body {
   background-color: var(--color-white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* Typography */
@@ -113,6 +114,7 @@ ul, ol {
 /* Section Spacing */
 .section {
   padding-block: var(--space-16);
+  overflow-x: hidden;
 }
 
 @media (min-width: 768px) {
