@@ -1238,6 +1238,11 @@
   gap: var(--space-2);
 }
 
+.cta-section__details span svg {
+  flex-shrink: 0;
+  color: currentColor;
+}
+
 .cta-section__buttons {
   display: flex;
   flex-wrap: wrap;
