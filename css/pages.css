@@ -4,9 +4,19 @@
    HERO SECTION
    =================== */
 .hero {
-  padding-top: calc(80px + var(--space-16));
+  padding-top: var(--space-16);
   background: linear-gradient(135deg, var(--color-neutral-50) 0%, var(--color-primary-50) 50%, var(--color-secondary-50) 100%);
   overflow: hidden;
+}
+
+/* When hero follows bett-mini-banner, reduce top padding */
+.bett-mini-banner + .hero {
+  padding-top: var(--space-12);
+}
+
+/* Standalone hero (no mini banner) keeps nav offset */
+main > .hero:first-child {
+  padding-top: calc(80px + var(--space-16));
 }
 
 .hero__grid {

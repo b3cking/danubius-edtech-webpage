@@ -902,6 +902,89 @@
 }
 
 /* ===================
+   BETT MINI BANNER
+   =================== */
+.bett-mini-banner {
+  background: linear-gradient(135deg, var(--color-secondary-600) 0%, var(--color-primary-700) 100%);
+  padding: var(--space-3) 0;
+  padding-top: calc(100px + var(--space-3));
+}
+
+.bett-mini-banner__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  text-decoration: none;
+  color: var(--color-white);
+  transition: opacity var(--transition-fast);
+}
+
+.bett-mini-banner__link:hover {
+  color: var(--color-white);
+  opacity: 0.9;
+}
+
+.bett-mini-banner__link:hover .bett-mini-banner__arrow {
+  transform: translateX(4px);
+}
+
+.bett-mini-banner__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bett-mini-banner__icon svg {
+  color: var(--color-secondary-300);
+}
+
+.bett-mini-banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+@media (min-width: 640px) {
+  .bett-mini-banner__text {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-3);
+  }
+}
+
+.bett-mini-banner__text strong {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.bett-mini-banner__subtext {
+  font-size: var(--font-size-xs);
+  opacity: 0.9;
+}
+
+@media (min-width: 640px) {
+  .bett-mini-banner__subtext::before {
+    content: '—';
+    margin-right: var(--space-2);
+  }
+}
+
+.bett-mini-banner__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.bett-mini-banner__arrow svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ===================
    FOOTER
    =================== */
 .footer {
