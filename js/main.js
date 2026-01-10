@@ -15,6 +15,7 @@
     initAnimations();
     initFormHandling();
     initSmoothScroll();
+    initAccordions();
   });
 
   // ===================
@@ -388,6 +389,44 @@
         }, limit);
       }
     };
+  }
+
+  // ===================
+  // Modern Accordions
+  // ===================
+  function initAccordions() {
+    const accordions = document.querySelectorAll('.modern-accordion__trigger');
+
+    accordions.forEach(function(trigger) {
+      trigger.addEventListener('click', function() {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        const content = document.getElementById(this.getAttribute('aria-controls'));
+
+        // Toggle aria-expanded
+        this.setAttribute('aria-expanded', !isExpanded);
+
+        // Toggle content visibility with smooth animation
+        if (content) {
+          content.setAttribute('aria-hidden', isExpanded);
+
+          if (!isExpanded) {
+            // Opening: set max-height to content height for smooth animation
+            content.style.maxHeight = content.scrollHeight + 'px';
+          } else {
+            // Closing: animate back to 0
+            content.style.maxHeight = '0px';
+          }
+        }
+      });
+
+      // Handle keyboard navigation
+      trigger.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          this.click();
+        }
+      });
+    });
   }
 
   // ===================

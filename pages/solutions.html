@@ -24,11 +24,11 @@
   <title>AI Solutions & Products - Danubius IT Solutions</title>
 
   <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
-  <link rel="stylesheet" href="../css/variables.css">
-  <link rel="stylesheet" href="../css/base.css">
-  <link rel="stylesheet" href="../css/components.css">
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/variables.css?v=11">
+  <link rel="stylesheet" href="../css/base.css?v=11">
+  <link rel="stylesheet" href="../css/components.css?v=11">
+  <link rel="stylesheet" href="../css/pages.css?v=17">
+  <link rel="stylesheet" href="../css/responsive.css?v=11">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -149,74 +149,76 @@
               </div>
             </div>
 
-            <h4 style="margin-top: var(--space-8); margin-bottom: var(--space-4);">Key Capabilities</h4>
-            <ul class="feature-list">
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">OCR homework extraction from photos</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Socratic reasoning flow with guided questions</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Adaptive hints: questions, diagrams, scaffolding</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Gamification: coins, badges, streaks, challenges</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Curriculum-aligned responses via RAG</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Topic mastery insights for students</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Content struggle patterns for publishers</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Building metacognitive skills</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Routine question handling so classroom time can focus on deeper learning</span>
-              </li>
-            </ul>
+            <div class="modern-accordion">
+              <button class="modern-accordion__trigger" aria-expanded="false" aria-controls="capabilities-panel">
+                <div class="modern-accordion__header">
+                  <h4 class="modern-accordion__title">Key Capabilities</h4>
+                  <span class="modern-accordion__subtitle">Comprehensive AI-powered learning features</span>
+                </div>
+                <div class="modern-accordion__icon">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 6l4 4 4-4"/>
+                  </svg>
+                </div>
+              </button>
+              <div id="capabilities-panel" class="modern-accordion__content" aria-hidden="true">
+                <div class="modern-accordion__inner">
+                  <ul class="feature-list">
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">OCR homework extraction from photos</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Socratic reasoning flow with guided questions</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Adaptive hints: questions, diagrams, scaffolding</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Gamification: coins, badges, streaks, challenges</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Curriculum-aligned responses via RAG</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Topic mastery insights for students</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Content struggle patterns for publishers</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-            <a href="contact.html" class="btn btn--primary btn--lg" style="margin-top: var(--space-8);">
+            <a href="contact.html" class="btn btn--primary btn--lg" style="margin-top: var(--space-3);">
               Get a demo of Chamely
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -225,41 +227,7 @@
           </div>
 
           <div class="product-visual">
-            <div class="mockup-window">
-              <div class="mockup-window__header">
-                <span class="mockup-window__dot mockup-window__dot--red"></span>
-                <span class="mockup-window__dot mockup-window__dot--yellow"></span>
-                <span class="mockup-window__dot mockup-window__dot--green"></span>
-              </div>
-              <div class="mockup-window__content">
-                <div class="chat-mockup">
-                  <div class="chat-message chat-message--user">
-                    <div class="chat-message__avatar">S</div>
-                    <div class="chat-message__bubble">
-                      How do I solve 3x + 7 = 22?
-                    </div>
-                  </div>
-                  <div class="chat-message chat-message--ai">
-                    <div class="chat-message__avatar">C</div>
-                    <div class="chat-message__bubble">
-                      Great question! To isolate x, we need to undo the operations around it. What's the first thing we should remove from the left side?
-                    </div>
-                  </div>
-                  <div class="chat-message chat-message--user">
-                    <div class="chat-message__avatar">S</div>
-                    <div class="chat-message__bubble">
-                      The 7?
-                    </div>
-                  </div>
-                  <div class="chat-message chat-message--ai">
-                    <div class="chat-message__avatar">C</div>
-                    <div class="chat-message__bubble">
-                      Exactly! To remove +7, we subtract 7 from both sides. What does that give us?
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <img src="../images/AI-homework-chat.png" alt="AI homework tutor interface on tablets showing math problem solving with photo upload feature. Main screen displays handwritten math equations with subject selection (Science, Biology, History, Math, Chemistry) and year level options (7-13). Side screen shows session summary with topic mastery progress, AI assessment, performance highlights, and areas to focus on." class="product-visual__image">
           </div>
         </div>
       </div>
@@ -280,51 +248,67 @@
               Built for publishers and educators to improve content over time. Traditional analytics show page views and completion rates. We show you where students actually struggle during homework completion—and why.
             </p>
 
-            <h4 style="margin-top: var(--space-6); margin-bottom: var(--space-4);">Capabilities</h4>
-            <ul class="feature-list">
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Identify struggle patterns across thousands of learning sessions</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Teacher wishlist for improvements with pedagogical context</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Anonymous, aggregated, GDPR-compliant insights</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Analysis on how different learner types interact with content</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Cross-school trend analysis for editorial prioritization</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Integrates with Chamely or standalone dashboards</span>
-              </li>
-            </ul>
+            <div class="modern-accordion">
+              <button class="modern-accordion__trigger" aria-expanded="false" aria-controls="intelligence-capabilities-panel">
+                <div class="modern-accordion__header">
+                  <h4 class="modern-accordion__title">Capabilities</h4>
+                  <span class="modern-accordion__subtitle">Analytics and insights for content improvement</span>
+                </div>
+                <div class="modern-accordion__icon">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 6l4 4 4-4"/>
+                  </svg>
+                </div>
+              </button>
+              <div id="intelligence-capabilities-panel" class="modern-accordion__content" aria-hidden="true">
+                <div class="modern-accordion__inner">
+                  <ul class="feature-list">
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Identify struggle patterns across thousands of learning sessions</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Teacher wishlist for improvements with pedagogical context</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Anonymous, aggregated, GDPR-compliant insights</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Analysis on how different learner types interact with content</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Cross-school trend analysis for editorial prioritization</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Integrates with Chamely or standalone dashboards</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
             <div style="margin-top: var(--space-6); padding: var(--space-4); background: var(--color-primary-50); border-radius: var(--radius-lg); border-left: 4px solid var(--color-primary-500);">
               <p style="margin: 0; font-size: var(--font-size-sm); color: var(--color-primary-700);">
@@ -338,35 +322,8 @@
             </a>
           </div>
 
-          <div class="product-visual" style="background: var(--color-white);">
-            <div class="insight-dashboard">
-              <div class="insight-dashboard__header">
-                <span class="insight-dashboard__title">Content Performance Dashboard</span>
-                <span class="badge badge--secondary">Live</span>
-              </div>
-              <div class="insight-dashboard__chart">
-                <div class="chart-bar" style="height: 45%;" data-label="Ch. 1"></div>
-                <div class="chart-bar" style="height: 78%;" data-label="Ch. 2"></div>
-                <div class="chart-bar" style="height: 32%;" data-label="Ch. 3"></div>
-                <div class="chart-bar" style="height: 89%;" data-label="Ch. 4"></div>
-                <div class="chart-bar" style="height: 56%;" data-label="Ch. 5"></div>
-                <div class="chart-bar" style="height: 71%;" data-label="Ch. 6"></div>
-              </div>
-              <div class="insight-dashboard__metrics">
-                <div class="metric">
-                  <div class="metric__value">23</div>
-                  <div class="metric__label">Friction Points</div>
-                </div>
-                <div class="metric">
-                  <div class="metric__value">87%</div>
-                  <div class="metric__label">Comprehension</div>
-                </div>
-                <div class="metric">
-                  <div class="metric__value">4.2k</div>
-                  <div class="metric__label">Interactions</div>
-                </div>
-              </div>
-            </div>
+          <div class="product-visual">
+            <img src="../images/publisher-dashboard.png" alt="Publisher dashboard showing content performance analytics with student struggle patterns, comprehension rates, and friction point analysis across different chapters and learning modules." class="product-visual__image">
           </div>
         </div>
       </div>
@@ -427,73 +384,82 @@
             <span class="product-badge" style="background: linear-gradient(135deg, var(--color-accent-500), var(--color-accent-600));">
               Engagement Tool
             </span>
-            <h2 class="product-title">Historical Character Chatbot</h2>
+            <h2 class="product-title">Historical Character Chat</h2>
             <p class="product-subtitle">Bringing history to life</p>
 
             <p class="product-description">
               A historical character chatbot that brings figures like da Vinci or Napoleon to life — aligned to curriculum needs. Perfect for engagement and deeper learning through interactive conversations with historical figures.
             </p>
 
-            <h4 style="margin-top: var(--space-8); margin-bottom: var(--space-4);">Key Capabilities</h4>
-            <ul class="feature-list">
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Curriculum-aligned historical accuracy</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Essay scaffolding: builds on existing knowledge, breaks down complexity</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Literature and concept analysis support</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Metacognitive reflection prompts</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Multi-session conversation continuity</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Interactive dialogue that makes history tangible and memorable</span>
-              </li>
-            </ul>
+            <div class="modern-accordion">
+              <button class="modern-accordion__trigger" aria-expanded="false" aria-controls="historical-capabilities-panel">
+                <div class="modern-accordion__header">
+                  <h4 class="modern-accordion__title">Key Capabilities</h4>
+                  <span class="modern-accordion__subtitle">Interactive historical learning features</span>
+                </div>
+                <div class="modern-accordion__icon">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 6l4 4 4-4"/>
+                  </svg>
+                </div>
+              </button>
+              <div id="historical-capabilities-panel" class="modern-accordion__content" aria-hidden="true">
+                <div class="modern-accordion__inner">
+                  <ul class="feature-list">
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Curriculum-aligned historical accuracy</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Essay scaffolding: builds on existing knowledge, breaks down complexity</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Literature and concept analysis support</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Metacognitive reflection prompts</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Multi-session conversation continuity</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Interactive dialogue that makes history tangible and memorable</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
             <a href="contact.html" class="btn btn--secondary" style="margin-top: var(--space-6);">
-              Inquire about Historical Chatbot
+              Inquire about Historical Character Chat
             </a>
           </div>
 
-          <div class="product-visual" style="background: linear-gradient(135deg, #f5e6d3, #e8d5c4);">
-            <div class="product-visual__placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/>
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
-                <path d="M12 6v2M12 16v2M6 12h2M16 12h2"/>
-              </svg>
-              <p>Interactive Historical Figure</p>
-            </div>
+          <div class="product-visual">
+            <img src="../images/Historic-chat.png" alt="Historical Character Chat interface showing conversation with Napoleon Bonaparte. Left tablet displays chat conversation where student Mark asks Napoleon about military strategy, with Napoleon responding using Socratic questioning about speed and leadership. Right tablet shows detailed session summary with topic mastery progress bar, AI tutor assessment, student performance highlights, and areas for improvement. Suggested follow-up questions appear at bottom of chat." class="product-visual__image">
           </div>
         </div>
       </div>
@@ -514,51 +480,67 @@
               A unified communication and engagement platform connecting teachers, parents, and school administration- saving time by automating repetitive questions while keeping everyone connected.
             </p>
 
-            <h4 style="margin-top: var(--space-8); margin-bottom: var(--space-4);">Core Capabilities</h4>
-            <ul class="feature-list">
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Parent-teacher messaging and group channels</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">School news feed and event announcements</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">LMS integration and seamless single sign-on</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">AI assistant (AIMEE) answers common questions 24/7 from school documents</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Flexible API-first architecture</span>
-              </li>
-              <li class="feature-list__item">
-                <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                <span class="feature-list__text">Step-by-step modernization path</span>
-              </li>
-            </ul>
+            <div class="modern-accordion">
+              <button class="modern-accordion__trigger" aria-expanded="false" aria-controls="edubridge-capabilities-panel">
+                <div class="modern-accordion__header">
+                  <h4 class="modern-accordion__title">Core Capabilities</h4>
+                  <span class="modern-accordion__subtitle">Communication and integration platform features</span>
+                </div>
+                <div class="modern-accordion__icon">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 6l4 4 4-4"/>
+                  </svg>
+                </div>
+              </button>
+              <div id="edubridge-capabilities-panel" class="modern-accordion__content" aria-hidden="true">
+                <div class="modern-accordion__inner">
+                  <ul class="feature-list">
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Parent-teacher messaging and group channels</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">School news feed and event announcements</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">LMS integration and seamless single sign-on</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">AI assistant (AIMEE) answers common questions 24/7 from school documents</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Flexible API-first architecture</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Step-by-step modernization path</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
             <p style="margin-top: var(--space-6); font-weight: var(--font-weight-medium); color: var(--color-neutral-700);">
               Teachers reclaim hours lost to repetitive emails. Parents get instant answers. School office reduces call and email volume.
@@ -570,15 +552,7 @@
           </div>
 
           <div class="product-visual">
-            <div class="product-visual__placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="2" y="3" width="20" height="14" rx="2"/>
-                <path d="M8 21h8M12 17v4"/>
-                <path d="M7 8h2M7 12h2M15 8h2M15 12h2"/>
-                <path d="M11 10h2"/>
-              </svg>
-              <p>Platform Integration Layer</p>
-            </div>
+            <img src="../images/EduBridge-web.png" alt="EduBridge platform interface showing unified communication dashboard with parent-teacher messaging, school announcements, LMS integration, and AIMEE AI assistant providing 24/7 automated responses to common questions from school documents." class="product-visual__image">
           </div>
         </div>
       </div>

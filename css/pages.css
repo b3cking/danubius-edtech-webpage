@@ -662,7 +662,7 @@ main > .hero:first-child {
 .product-grid {
   display: grid;
   gap: var(--space-12);
-  align-items: center;
+  align-items: start;
 }
 
 @media (min-width: 1024px) {
@@ -730,6 +730,17 @@ main > .hero:first-child {
   max-width: 100%;
 }
 
+@media (min-width: 1024px) {
+  .product-visual {
+    margin-top: 7rem;
+  }
+}
+
+.product-visual:has(.product-visual__image) {
+  background: transparent;
+  padding: 0;
+}
+
 @media (max-width: 767px) {
   .product-visual {
     padding: var(--space-4);
@@ -747,6 +758,179 @@ main > .hero:first-child {
   height: 80px;
   margin-bottom: var(--space-4);
   color: var(--color-primary-300);
+}
+
+.product-visual__image {
+  max-width: 100%;
+  height: auto;
+  background: transparent;
+  border-radius: var(--radius-lg);
+}
+
+/* Modern Accordion Component */
+.modern-accordion {
+  border: 1px solid var(--color-neutral-200);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.modern-accordion:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-color: var(--color-primary-200);
+}
+
+.modern-accordion__trigger {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: var(--radius-lg);
+}
+
+.modern-accordion__trigger:hover {
+  background: linear-gradient(135deg, var(--color-primary-50), var(--color-secondary-50));
+}
+
+.modern-accordion__trigger:focus {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+.modern-accordion__trigger[aria-expanded="true"] {
+  background: linear-gradient(135deg, var(--color-primary-50), var(--color-secondary-50));
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.modern-accordion__header {
+  flex: 1;
+  min-width: 0;
+}
+
+.modern-accordion__title {
+  margin: 0 0 var(--space-1) 0;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-neutral-900);
+  line-height: var(--line-height-tight);
+}
+
+.modern-accordion__subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-neutral-600);
+  font-weight: var(--font-weight-medium);
+  margin: 0;
+}
+
+.modern-accordion__icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-left: var(--space-4);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--color-primary-500);
+}
+
+.modern-accordion__trigger[aria-expanded="true"] .modern-accordion__icon {
+  transform: rotate(180deg);
+}
+
+.modern-accordion__content {
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  max-height: 0;
+  opacity: 0;
+}
+
+.modern-accordion__content[aria-hidden="false"] {
+  max-height: 2000px;
+  opacity: 1;
+}
+
+.modern-accordion__inner {
+  padding: var(--space-6);
+  border-top: 1px solid var(--color-neutral-100);
+}
+
+/* Capabilities Grid */
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 768px) {
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+}
+
+/* Capability Cards */
+.capability-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  border: 1px solid var(--color-neutral-100);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.capability-card:hover {
+  background: var(--color-primary-50);
+  border-color: var(--color-primary-200);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.capability-card__icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary-100), var(--color-secondary-100));
+  border-radius: var(--radius-lg);
+  color: var(--color-primary-600);
+}
+
+.capability-card__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.capability-card__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.capability-card__title {
+  margin: 0 0 var(--space-1) 0;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-900);
+  line-height: var(--line-height-tight);
+}
+
+.capability-card__description {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-neutral-600);
+  line-height: var(--line-height-relaxed);
 }
 
 /* Principles List */
