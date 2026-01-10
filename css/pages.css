@@ -267,6 +267,12 @@ main > .hero:first-child {
   }
 }
 
+.product-showcase__image {
+  max-width: 100%;
+  height: auto;
+  background: transparent;
+}
+
 .product-showcase__content {
   order: 1;
 }
