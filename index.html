@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/pages.css?v=9">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
@@ -138,68 +138,7 @@
           </div>
 
           <div class="hero__visual animate-fade-in delay-200">
-            <div class="hero-mockup">
-              <div class="mockup-window">
-                <div class="mockup-window__header">
-                  <span class="mockup-window__dot mockup-window__dot--red"></span>
-                  <span class="mockup-window__dot mockup-window__dot--yellow"></span>
-                  <span class="mockup-window__dot mockup-window__dot--green"></span>
-                </div>
-                <div class="mockup-window__content">
-                  <div class="chat-mockup">
-                    <div class="chat-message chat-message--user">
-                      <div class="chat-message__avatar">E</div>
-                      <div class="chat-message__bubble">
-                        I don't understand why x = 5 in this equation. Can you help?
-                      </div>
-                    </div>
-                    <div class="chat-message chat-message--ai">
-                      <div class="chat-message__avatar">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 110 2h-1.07A7.001 7.001 0 0113 22h-2a7.001 7.001 0 01-6.93-6H3a1 1 0 110-2h1a7 7 0 017-7h1V5.73A2 2 0 0112 2z"/>
-                        </svg>
-                      </div>
-                      <div class="chat-message__bubble">
-                        Great question! Let's work through this together. Looking at your equation 2x + 3 = 13, what operation do you think we should do first to isolate x?
-                      </div>
-                    </div>
-                    <div class="chat-message chat-message--user">
-                      <div class="chat-message__avatar">E</div>
-                      <div class="chat-message__bubble">
-                        Subtract 3 from both sides?
-                      </div>
-                    </div>
-                    <div class="chat-message chat-message--ai">
-                      <div class="chat-message__avatar">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 110 2h-1.07A7.001 7.001 0 0113 22h-2a7.001 7.001 0 01-6.93-6H3a1 1 0 110-2h1a7 7 0 017-7h1V5.73A2 2 0 0112 2z"/>
-                        </svg>
-                      </div>
-                      <div class="chat-message__bubble">
-                        Exactly right! You subtract 3 from both sides. Now, what does that give you?
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Floating Elements -->
-              <div class="hero-mockup__float hero-mockup__float--insight">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M3 3v18h18"/>
-                  <path d="M18 9l-5 5-4-4-3 3"/>
-                </svg>
-                <span>Content Insights</span>
-              </div>
-
-              <div class="hero-mockup__float hero-mockup__float--badge">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="8" r="6"/>
-                  <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
-                </svg>
-                <span>+50 coins</span>
-              </div>
-            </div>
+            <img src="images/hero-manufacturing-illustration.png" alt="Illustration showing educational materials entering a manufacturing machine labeled with Danubius logo, producing digital learning outputs including laptops, tablets, and packages - that enable a great learning experience, visualizing 'Your content, our engineering, great learning experience'" class="hero__image">
           </div>
         </div>
       </div>
@@ -411,56 +350,7 @@
         <div class="product-showcase">
           <!-- Left: Visual Dashboard -->
           <div class="product-showcase__visual">
-            <div class="tutor-dashboard">
-              <div class="tutor-dashboard__header">
-                <span class="tutor-dashboard__title">AI Tutoring Session</span>
-                <span class="tutor-dashboard__badge">Live</span>
-              </div>
-
-              <!-- Chat Interface Preview -->
-              <div class="tutor-dashboard__chat">
-                <div class="chat-message chat-message--student">
-                  <span class="chat-message__avatar">S</span>
-                  <div class="chat-message__content">I don't understand how to solve 2x + 5 = 13</div>
-                </div>
-                <div class="chat-message chat-message--ai">
-                  <span class="chat-message__avatar">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 110 2h-1.07A7.001 7.001 0 0113 22h-2a7.001 7.001 0 01-6.93-6H3a1 1 0 110-2h1a7 7 0 017-7h1V5.73A2 2 0 0112 2z"/>
-                    </svg>
-                  </span>
-                  <div class="chat-message__content">Great question! Let's think about this step by step. What operation do you think we should do first to isolate x?</div>
-                </div>
-                <div class="chat-message chat-message--student">
-                  <span class="chat-message__avatar">S</span>
-                  <div class="chat-message__content">Subtract 5 from both sides?</div>
-                </div>
-                <div class="chat-message chat-message--ai">
-                  <span class="chat-message__avatar">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 110 2h-1.07A7.001 7.001 0 0113 22h-2a7.001 7.001 0 01-6.93-6H3a1 1 0 110-2h1a7 7 0 017-7h1V5.73A2 2 0 0112 2z"/>
-                    </svg>
-                  </span>
-                  <div class="chat-message__content">Exactly right! You're thinking like a mathematician. Now what do you get?</div>
-                </div>
-              </div>
-
-              <!-- Stats Row -->
-              <div class="tutor-dashboard__stats">
-                <div class="tutor-stat">
-                  <span class="tutor-stat__value">94%</span>
-                  <span class="tutor-stat__label">Comprehension</span>
-                </div>
-                <div class="tutor-stat">
-                  <span class="tutor-stat__value">12</span>
-                  <span class="tutor-stat__label">Problems Solved</span>
-                </div>
-                <div class="tutor-stat">
-                  <span class="tutor-stat__value">3.2k</span>
-                  <span class="tutor-stat__label">Sessions</span>
-                </div>
-              </div>
-            </div>
+            <img src="images/Chamely-img.png" alt="Chamely AI tutor platform displayed on multiple tablet screens showing personalized dashboard with ongoing assignments for students, modules (Historical Chat, Homework Coach, Duel, Library), chat conversations with historical figures, homework problem solving." class="product-showcase__image">
           </div>
 
           <!-- Right: Content -->
