@@ -29,6 +29,31 @@
   <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/pages.css">
   <link rel="stylesheet" href="../css/responsive.css">
+
+  <style>
+    .blog-card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .blog-card-link:hover {
+      transform: translateY(-2px);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .blog-card-link:hover .blog-card {
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .blog-card-link:focus {
+      outline: 2px solid var(--color-primary-500);
+      outline-offset: 2px;
+      border-radius: var(--radius-lg);
+    }
+  </style>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -84,126 +109,114 @@
           <!-- Main Content -->
           <div>
             <!-- Featured Post -->
-            <article class="blog-card blog-card--featured" style="margin-bottom: var(--space-12);">
-              <div class="blog-card__image" style="aspect-ratio: 21/9;">
-                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary-700), var(--color-secondary-600));">
-                  <div style="text-align: center; color: white; padding: var(--space-6);">
-                    <div style="font-size: var(--font-size-sm); text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.8; margin-bottom: var(--space-2);">5-Part Series</div>
-                    <div style="font-size: var(--font-size-2xl); font-weight: var(--font-weight-bold);">Beyond Boundaries</div>
+            <a href="blog/beyond-boundaries-part-1.html" class="blog-card-link">
+              <article class="blog-card blog-card--featured" style="margin-bottom: var(--space-12);">
+                <div class="blog-card__image" style="aspect-ratio: 21/9;">
+                  <img src="../images/blog-part-1.avif" alt="Beyond Boundaries: Secondary education publishers leading the AI-ready learning revolution at BETT 2026" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="blog-card__content">
+                  <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-3);">
+                    <span class="blog-card__category">AI</span>
+                    <span class="blog-card__category">Secondary Education</span>
+                    <span class="blog-card__category">BETT 2026</span>
+                  </div>
+                  <h2 class="blog-card__title">
+                    Beyond Boundaries: How Secondary Education Publishers Can Lead the AI-Ready Learning Revolution
+                  </h2>
+                  <p class="blog-card__excerpt">
+                    As BETT UK 2026 approaches with its inspiring theme "Learning Without Limits," publishers serving secondary education (ages 12-18) stand at an extraordinary inflection point. This five-part series explores how the convergence of AI, changing assessments, and evolving workplace demands creates unprecedented opportunities to redefine what quality educational content means for the examination years.
+                  </p>
+                  <div class="blog-card__meta">
+                    <span>Part 1 of 5</span>
                   </div>
                 </div>
-              </div>
-              <div class="blog-card__content">
-                <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-3);">
-                  <span class="blog-card__category">AI</span>
-                  <span class="blog-card__category">Secondary Education</span>
-                  <span class="blog-card__category">BETT 2026</span>
-                </div>
-                <h2 class="blog-card__title">
-                  <a href="blog/beyond-boundaries-part-1.html">Beyond Boundaries: How Secondary Education Publishers Can Lead the AI-Ready Learning Revolution</a>
-                </h2>
-                <p class="blog-card__excerpt">
-                  As BETT UK 2026 approaches with its inspiring theme "Learning Without Limits," publishers serving secondary education (ages 12-18) stand at an extraordinary inflection point. This five-part series explores how the convergence of AI, changing assessments, and evolving workplace demands creates unprecedented opportunities to redefine what quality educational content means for the examination years.
-                </p>
-                <div class="blog-card__meta">
-                  <span>Part 1 of 5</span>
-                </div>
-              </div>
-            </article>
+              </article>
+            </a>
 
             <!-- Blog Grid - Beyond Boundaries Series -->
             <div class="blog-grid">
               <!-- Part 2 -->
-              <article class="blog-card">
-                <div class="blog-card__image">
-                  <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary-100), var(--color-secondary-100));">
-                    <div style="text-align: center;">
-                      <div style="font-size: var(--font-size-xs); color: var(--color-primary-600); text-transform: uppercase; letter-spacing: 0.05em;">Part 2</div>
-                      <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-primary-500)" stroke-width="1.5" style="margin-top: var(--space-2);">
-                        <path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 110 2h-1.07A7.001 7.001 0 0113 22h-2a7.001 7.001 0 01-6.93-6H3a1 1 0 110-2h1a7 7 0 017-7h1V5.73A2 2 0 0112 2z"/>
-                      </svg>
+              <a href="blog/beyond-boundaries-part-2.html" class="blog-card-link">
+                <article class="blog-card">
+                  <div class="blog-card__image">
+                    <img src="../images/blog-part-2.avif" alt="AI enhances learning materials: How publisher content becomes the foundation for trustworthy educational AI" style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <div class="blog-card__content">
+                    <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-2);">
+                      <span class="blog-card__category">AI</span>
+                      <span class="blog-card__category">Socratic Learning</span>
+                      <span class="blog-card__category">BETT 2026</span>
+                    </div>
+                    <h3 class="blog-card__title">
+                      The AI Integration Reality
+                    </h3>
+                    <p class="blog-card__excerpt">
+                      Enriching learning materials with AI, not being replaced by it. Why publisher content becomes the essential foundation for trustworthy educational AI.
+                    </p>
+                    <div class="blog-card__meta">
+                      <span>Part 2 of 5</span>
                     </div>
                   </div>
-                </div>
-                <div class="blog-card__content">
-                  <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-2);">
-                    <span class="blog-card__category">AI</span>
-                    <span class="blog-card__category">Socratic Learning</span>
-                    <span class="blog-card__category">BETT 2026</span>
-                  </div>
-                  <h3 class="blog-card__title">
-                    <a href="blog/beyond-boundaries-part-2.html">The AI Integration Reality</a>
-                  </h3>
-                  <p class="blog-card__excerpt">
-                    Enriching learning materials with AI, not being replaced by it. Why publisher content becomes the essential foundation for trustworthy educational AI.
-                  </p>
-                  <div class="blog-card__meta">
-                    <span>Part 2 of 5</span>
-                  </div>
-                </div>
-              </article>
+                </article>
+              </a>
 
               <!-- Part 3 -->
-              <article class="blog-card">
-                <div class="blog-card__image">
-                  <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-secondary-100), var(--color-accent-100));">
-                    <div style="text-align: center;">
-                      <div style="font-size: var(--font-size-xs); color: var(--color-secondary-600); text-transform: uppercase; letter-spacing: 0.05em;">Part 3</div>
-                      <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-secondary-500)" stroke-width="1.5" style="margin-top: var(--space-2);">
-                        <path d="M3 3v18h18"/>
-                        <path d="M18 9l-5 5-4-4-3 3"/>
-                      </svg>
+              <a href="blog/beyond-boundaries-part-3.html" class="blog-card-link">
+                <article class="blog-card">
+                  <div class="blog-card__image">
+                    <img src="../images/blog-part-3.avif" alt="Subject-Specific Intelligence: Understanding where students struggle in Maths, Science, and Humanities with data-driven insights" style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <div class="blog-card__content">
+                    <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-2);">
+                      <span class="blog-card__category">Content Intelligence</span>
+                      <span class="blog-card__category">BETT 2026</span>
+                    </div>
+                    <h3 class="blog-card__title">
+                      Subject-Specific Intelligence
+                    </h3>
+                    <p class="blog-card__excerpt">
+                      Understanding exactly where students struggle in Maths, Science, and Humanities. Data-driven insights for content improvement.
+                    </p>
+                    <div class="blog-card__meta">
+                      <span>Part 3 of 5</span>
                     </div>
                   </div>
-                </div>
-                <div class="blog-card__content">
-                  <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-2);">
-                    <span class="blog-card__category">Content Intelligence</span>
-                    <span class="blog-card__category">BETT 2026</span>
-                  </div>
-                  <h3 class="blog-card__title">
-                    <a href="blog/beyond-boundaries-part-3.html">Subject-Specific Intelligence</a>
-                  </h3>
-                  <p class="blog-card__excerpt">
-                    Understanding exactly where students struggle in Maths, Science, and Humanities. Data-driven insights for content improvement.
-                  </p>
-                  <div class="blog-card__meta">
-                    <span>Coming Soon</span>
-                  </div>
-                </div>
-              </article>
+                </article>
+              </a>
 
               <!-- Part 4 -->
-              <article class="blog-card">
-                <div class="blog-card__image">
-                  <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-accent-100), var(--color-primary-100));">
-                    <div style="text-align: center;">
-                      <div style="font-size: var(--font-size-xs); color: var(--color-accent-600); text-transform: uppercase; letter-spacing: 0.05em;">Part 4</div>
-                      <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-accent-500)" stroke-width="1.5" style="margin-top: var(--space-2);">
-                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-                        <circle cx="9" cy="7" r="4"/>
-                        <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
-                      </svg>
+              <a href="blog/beyond-boundaries-part-4.html" class="blog-card-link">
+                <article class="blog-card">
+                  <div class="blog-card__image">
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-accent-100), var(--color-primary-100));">
+                      <div style="text-align: center;">
+                        <div style="font-size: var(--font-size-xs); color: var(--color-accent-600); text-transform: uppercase; letter-spacing: 0.05em;">Part 4</div>
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-accent-500)" stroke-width="1.5" style="margin-top: var(--space-2);">
+                          <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                          <circle cx="9" cy="7" r="4"/>
+                          <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                        </svg>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="blog-card__content">
-                  <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-2);">
-                    <span class="blog-card__category">SEND</span>
-                    <span class="blog-card__category">Assessment</span>
-                    <span class="blog-card__category">BETT 2026</span>
+                  <div class="blog-card__content">
+                    <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-2);">
+                      <span class="blog-card__category">SEND</span>
+                      <span class="blog-card__category">Assessment</span>
+                      <span class="blog-card__category">BETT 2026</span>
+                    </div>
+                    <h3 class="blog-card__title">
+                      The Assessment & SEND Revolution
+                    </h3>
+                    <p class="blog-card__excerpt">
+                      Supporting diverse learners through transforming evaluation methods. Inclusive education in the AI age.
+                    </p>
+                    <div class="blog-card__meta">
+                      <span>Coming Soon</span>
+                    </div>
                   </div>
-                  <h3 class="blog-card__title">
-                    <a href="blog/beyond-boundaries-part-4.html">The Assessment & SEND Revolution</a>
-                  </h3>
-                  <p class="blog-card__excerpt">
-                    Supporting diverse learners through transforming evaluation methods. Inclusive education in the AI age.
-                  </p>
-                  <div class="blog-card__meta">
-                    <span>Coming Soon</span>
-                  </div>
-                </div>
-              </article>
+                </article>
+              </a>
             </div>
 
           </div>
@@ -266,52 +279,56 @@
       <div class="container">
         <div class="blog-grid">
           <!-- Part 5 -->
-          <article class="blog-card">
-            <div class="blog-card__image">
-              <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary-100), var(--color-accent-100));">
-                <div style="text-align: center;">
-                  <div style="font-size: var(--font-size-xs); color: var(--color-primary-600); text-transform: uppercase; letter-spacing: 0.05em;">Part 5</div>
-                  <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-primary-500)" stroke-width="1.5" style="margin-top: var(--space-2);">
-                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
-                  </svg>
+          <a href="blog/beyond-boundaries-part-5.html" class="blog-card-link">
+            <article class="blog-card">
+              <div class="blog-card__image">
+                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary-100), var(--color-accent-100));">
+                  <div style="text-align: center;">
+                    <div style="font-size: var(--font-size-xs); color: var(--color-primary-600); text-transform: uppercase; letter-spacing: 0.05em;">Part 5</div>
+                    <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--color-primary-500)" stroke-width="1.5" style="margin-top: var(--space-2);">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                      <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="blog-card__content">
-              <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-2);">
-                <span class="blog-card__category">Digital Engagement</span>
-                <span class="blog-card__category">BETT 2026</span>
+              <div class="blog-card__content">
+                <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-2);">
+                  <span class="blog-card__category">Digital Engagement</span>
+                  <span class="blog-card__category">BETT 2026</span>
+                </div>
+                <h3 class="blog-card__title">
+                  Digital Engagement & The Path Forward
+                </h3>
+                <p class="blog-card__excerpt">
+                  Balancing AI assistance with genuine capability building. The future of secondary education publishing.
+                </p>
+                <div class="blog-card__meta">
+                  <span>Coming Soon</span>
+                </div>
               </div>
-              <h3 class="blog-card__title">
-                <a href="blog/beyond-boundaries-part-5.html">Digital Engagement & The Path Forward</a>
-              </h3>
-              <p class="blog-card__excerpt">
-                Balancing AI assistance with genuine capability building. The future of secondary education publishing.
-              </p>
-              <div class="blog-card__meta">
-                <span>Coming Soon</span>
-              </div>
-            </div>
-          </article>
+            </article>
+          </a>
 
-          <article class="blog-card">
-            <div class="blog-card__image">
-              <img src="../images/books.jpg" alt="Stack of books representing trusted educational sources" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div class="blog-card__content">
-              <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-2);">
-                <span class="blog-card__category">AI in Education</span>
-                <span class="blog-card__category">Content Quality</span>
+          <a href="blog/ai-trusted-sources.html" class="blog-card-link">
+            <article class="blog-card">
+              <div class="blog-card__image">
+                <img src="../images/books.jpg" alt="Stack of books representing trusted educational sources" style="width: 100%; height: 100%; object-fit: cover;">
               </div>
-              <h3 class="blog-card__title">
-                <a href="blog/ai-trusted-sources.html">AI is Only as Good as Its Sources: Why Educational AI Needs Trusted Content</a>
-              </h3>
-              <p class="blog-card__excerpt">
-                When AI learns from the entire internet, it can't distinguish between scholarly analysis and someone's incorrect Reddit post. Here's why that matters for education.
-              </p>
-            </div>
-          </article>
+              <div class="blog-card__content">
+                <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-2);">
+                  <span class="blog-card__category">AI in Education</span>
+                  <span class="blog-card__category">Content Quality</span>
+                </div>
+                <h3 class="blog-card__title">
+                  AI is Only as Good as Its Sources: Why Educational AI Needs Trusted Content
+                </h3>
+                <p class="blog-card__excerpt">
+                  When AI learns from the entire internet, it can't distinguish between scholarly analysis and someone's incorrect Reddit post. Here's why that matters for education.
+                </p>
+              </div>
+            </article>
+          </a>
         </div>
       </div>
     </section>
