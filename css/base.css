@@ -254,22 +254,6 @@ ul, ol {
   outline-offset: 2px;
 }
 
-/* Skip Link for Accessibility */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: var(--color-primary-600);
-  color: var(--color-white);
-  padding: var(--space-2) var(--space-4);
-  z-index: var(--z-tooltip);
-  transition: top var(--transition-fast);
-}
-
-.skip-link:focus {
-  top: 0;
-}
-
 /* Selection */
 ::selection {
   background-color: var(--color-primary-200);
