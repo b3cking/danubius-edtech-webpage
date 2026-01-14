@@ -6,7 +6,7 @@
 (function() {
   'use strict';
 
-  const CONSENT_KEY = 'cookie_consent';
+  const CONSENT_KEY = 'danubius_cookie_consent';
   const GA_ID = 'G-BBMLVLVENP';
   const LINKEDIN_PARTNER_ID = '8104441';
 
