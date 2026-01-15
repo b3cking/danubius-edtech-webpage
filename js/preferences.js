@@ -1,6 +1,6 @@
 /**
  * Cookie Consent Manager
- * Handles user consent for analytics tracking (Google Analytics, LinkedIn Pixel)
+ * Handles user consent for analytics tracking (Google Analytics, LinkedIn Pixel, Apollo)
  */
 
 (function() {
@@ -9,6 +9,7 @@
   const CONSENT_KEY = 'danubius_cookie_consent';
   const GA_ID = 'G-BBMLVLVENP';
   const LINKEDIN_PARTNER_ID = '8104441';
+  const APOLLO_APP_ID = '691ef149df7c43000d952a18';
 
   /**
    * Get stored consent value
@@ -71,11 +72,27 @@
   }
 
   /**
+   * Load Apollo Website Tracker
+   */
+  function loadApolloTracking() {
+    var n = Math.random().toString(36).substring(7);
+    var script = document.createElement('script');
+    script.src = 'https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=' + n;
+    script.async = true;
+    script.defer = true;
+    script.onload = function() {
+      window.trackingFunctions.onLoad({ appId: APOLLO_APP_ID });
+    };
+    document.head.appendChild(script);
+  }
+
+  /**
    * Load all tracking scripts
    */
   function loadTracking() {
     loadGoogleAnalytics();
     loadLinkedInPixel();
+    loadApolloTracking();
   }
 
   /**
