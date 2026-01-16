@@ -16,11 +16,11 @@
   <title>AI Solutions & Products - Danubius IT Solutions</title>
 
   <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
-  <link rel="stylesheet" href="../css/variables.css?v=11">
-  <link rel="stylesheet" href="../css/base.css?v=11">
-  <link rel="stylesheet" href="../css/components.css?v=11">
-  <link rel="stylesheet" href="../css/pages.css?v=17">
-  <link rel="stylesheet" href="../css/responsive.css?v=11">
+  <link rel="stylesheet" href="../css/variables.css?v=18">
+  <link rel="stylesheet" href="../css/base.css?v=18">
+  <link rel="stylesheet" href="../css/components.css?v=18">
+  <link rel="stylesheet" href="../css/pages.css?v=18">
+  <link rel="stylesheet" href="../css/responsive.css?v=18">
 </head>
 <body>
   <!-- Navigation -->
@@ -455,10 +455,85 @@
       </div>
     </section>
 
-    <!-- EduBridge -->
-    <section class="section bg-light product-section" id="edubridge">
+    <!-- Teacher Dashboard -->
+    <section class="section bg-light product-section" id="teacher-dashboard">
       <div class="container">
         <div class="product-grid product-grid--reversed">
+          <div class="product-content">
+            <span class="product-badge" style="background: linear-gradient(135deg, var(--color-secondary-400), var(--color-primary-400));">
+              For Teachers
+            </span>
+            <h2 class="product-title">Teacher Dashboard</h2>
+            <p class="product-subtitle">Evidence-based student support opportunities</p>
+
+            <p class="product-description">
+              Built for educators to identify where students need help in real-time. Tests show what students got wrong. We show you where they're struggling during the learning process—and summarize which approaches were efficient.
+            </p>
+
+            <div class="modern-accordion">
+              <button class="modern-accordion__trigger" aria-expanded="false" aria-controls="teacher-capabilities-panel">
+                <div class="modern-accordion__header">
+                  <h4 class="modern-accordion__title">Capabilities</h4>
+                  <span class="modern-accordion__subtitle">Actionable insights for targeted class support</span>
+                </div>
+                <div class="modern-accordion__icon">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 6l4 4 4-4"/>
+                  </svg>
+                </div>
+              </button>
+              <div id="teacher-capabilities-panel" class="modern-accordion__content" aria-hidden="true">
+                <div class="modern-accordion__inner">
+                  <ul class="feature-list">
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Identify struggle patterns across your classes</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Privacy-first homework flow analysis</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Anonymous, aggregated, GDPR-compliant insights</span>
+                    </li>
+                    <li class="feature-list__item">
+                      <svg class="feature-list__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                      </svg>
+                      <span class="feature-list__text">Works seamlessly with our AI tutoring platform</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <a href="contact.html" class="btn btn--primary" style="margin-top: var(--space-6);">
+              Get more insights about the Teacher Dashboard
+            </a>
+          </div>
+
+          <div class="product-visual">
+            <img src="../images/teacher-dashboard.png" alt="Teacher Dashboard displayed on iPad Pro showing Year 2 Math classes with bar chart visualization of student performance. Green bars indicate struggled users vs total users across 10 topics. Top 3 critical topics highlighted: Measuring Length (100% struggled), Shapes & Geometry (75% struggled), and Number Patterns (67% struggled)" class="product-visual__image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EduBridge -->
+    <section class="section product-section" id="edubridge">
+      <div class="container">
+        <div class="product-grid">
           <div class="product-content">
             <span class="product-badge">
               Integration Platform
@@ -586,6 +661,7 @@
             <li><a href="solutions.html#chamely" class="footer__link">AI Homework Tutor</a></li>
             <li><a href="solutions.html#content-intelligence" class="footer__link">Content Intelligence</a></li>
             <li><a href="solutions.html#historical-chatbot" class="footer__link">Historical Character</a></li>
+            <li><a href="solutions.html#teacher-dashboard" class="footer__link">Teacher Dashboard</a></li>
             <li><a href="solutions.html#edubridge" class="footer__link">EduBridge</a></li>
           </ul>
         </div>
