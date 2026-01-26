@@ -1,6 +1,6 @@
 /**
  * Cookie Consent Manager
- * Handles user consent for analytics tracking (Google Analytics, LinkedIn Pixel, Apollo)
+ * Handles user consent for analytics tracking (Google Analytics, LinkedIn Pixel, Apollo, Meta Pixel)
  */
 
 (function() {
@@ -10,6 +10,7 @@
   const GA_ID = 'G-BBMLVLVENP';
   const LINKEDIN_PARTNER_ID = '8104441';
   const APOLLO_APP_ID = '691ef149df7c43000d952a18';
+  const META_PIXEL_ID = '824998612501628';
 
   /**
    * Get stored consent value
@@ -87,12 +88,29 @@
   }
 
   /**
+   * Load Meta Pixel (Facebook)
+   */
+  function loadMetaPixel() {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', META_PIXEL_ID);
+    fbq('track', 'PageView');
+  }
+
+  /**
    * Load all tracking scripts
    */
   function loadTracking() {
     loadGoogleAnalytics();
     loadLinkedInPixel();
     loadApolloTracking();
+    loadMetaPixel();
   }
 
   /**
