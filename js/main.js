@@ -445,47 +445,4 @@
     }
   };
 
-  // BETT Booking Modal functions
-  window.openBettBookingModal = function() {
-    const modal = document.getElementById('bett-booking-modal');
-    const iframe = document.getElementById('bett-booking-iframe');
-
-    if (modal && iframe) {
-      // Load iframe src only when opening (lazy load)
-      if (iframe.src === 'about:blank' && iframe.dataset.src) {
-        iframe.src = iframe.dataset.src;
-      }
-
-      modal.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
-
-      // Focus trap - focus the close button
-      const closeBtn = modal.querySelector('.modal__close');
-      if (closeBtn) {
-        setTimeout(function() {
-          closeBtn.focus();
-        }, 100);
-      }
-    }
-  };
-
-  window.closeBettBookingModal = function() {
-    const modal = document.getElementById('bett-booking-modal');
-
-    if (modal) {
-      modal.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-    }
-  };
-
-  // Close modal on Escape key
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-      const modal = document.getElementById('bett-booking-modal');
-      if (modal && modal.getAttribute('aria-hidden') === 'false') {
-        closeBettBookingModal();
-      }
-    }
-  });
-
 })();
