@@ -114,12 +114,13 @@
   }
 
   /**
-   * Show the cookie consent banner
+   * Show the cookie consent banner (blocks page interaction)
    */
   function showBanner() {
     const banner = document.getElementById('cookie-consent');
     if (banner) {
       banner.classList.add('cookie-banner--visible');
+      document.body.style.overflow = 'hidden';
     }
   }
 
@@ -130,6 +131,7 @@
     const banner = document.getElementById('cookie-consent');
     if (banner) {
       banner.classList.remove('cookie-banner--visible');
+      document.body.style.overflow = '';
     }
   }
 
