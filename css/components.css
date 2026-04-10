@@ -1670,3 +1670,141 @@
     width: 100%;
   }
 }
+
+/* ==========================================
+   Learntec Meeting Modal
+   ========================================== */
+
+.learntec-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1060;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+
+.learntec-modal[aria-hidden="false"] {
+  opacity: 1;
+  visibility: visible;
+}
+
+.learntec-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.learntec-modal__content {
+  position: relative;
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  max-width: 480px;
+  width: 100%;
+  box-shadow: var(--shadow-2xl);
+  transform: scale(0.9) translateY(20px);
+  transition: transform var(--transition-normal);
+}
+
+.learntec-modal[aria-hidden="false"] .learntec-modal__content {
+  transform: scale(1) translateY(0);
+}
+
+.learntec-modal__close {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-neutral-500);
+  padding: var(--space-1);
+  border-radius: var(--radius-md);
+  transition: color var(--transition-fast), background var(--transition-fast);
+}
+
+.learntec-modal__close:hover {
+  color: var(--color-neutral-900);
+  background: var(--color-neutral-100);
+}
+
+.learntec-modal__header {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.learntec-modal__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: linear-gradient(135deg, var(--color-secondary-500), var(--color-secondary-600));
+  color: white;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-4);
+}
+
+.learntec-modal__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-neutral-900);
+  margin: 0;
+}
+
+.learntec-modal__body {
+  text-align: center;
+}
+
+.learntec-modal__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+  padding: var(--space-4);
+  background: var(--color-neutral-50);
+  border-radius: var(--radius-lg);
+}
+
+.learntec-modal__info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  color: var(--color-neutral-700);
+  font-size: var(--font-size-base);
+}
+
+.learntec-modal__info-item svg {
+  color: var(--color-secondary-600);
+  flex-shrink: 0;
+}
+
+.learntec-modal__text {
+  color: var(--color-neutral-600);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-6);
+}
+
+.learntec-modal__cta {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .learntec-modal__content {
+    padding: var(--space-6);
+    margin: var(--space-4);
+  }
+
+  .learntec-modal__title {
+    font-size: var(--font-size-xl);
+  }
+}

@@ -16,6 +16,7 @@
     initFormHandling();
     initSmoothScroll();
     initAccordions();
+    initLearntecModal();
   });
 
   // ===================
@@ -426,6 +427,53 @@
           this.click();
         }
       });
+    });
+  }
+
+  // ===================
+  // Learntec Modal
+  // ===================
+  function initLearntecModal() {
+    const modal = document.getElementById('learntec-modal');
+    if (!modal) return;
+
+    const backdrop = modal.querySelector('.learntec-modal__backdrop');
+    const closeBtn = modal.querySelector('.learntec-modal__close');
+    const triggers = document.querySelectorAll('[data-open-learntec-modal]');
+
+    function openModal() {
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    // Open modal on trigger click
+    triggers.forEach(function(trigger) {
+      trigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        openModal();
+      });
+    });
+
+    // Close modal on backdrop click
+    if (backdrop) {
+      backdrop.addEventListener('click', closeModal);
+    }
+
+    // Close modal on close button click
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closeModal);
+    }
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
+        closeModal();
+      }
     });
   }
 
