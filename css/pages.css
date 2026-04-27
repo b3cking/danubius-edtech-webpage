@@ -37,6 +37,8 @@ main > .hero:first-child {
 }
 
 .hero__title {
+  font-family: 'Geist', 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: clamp(2rem, 1.6rem + 2vw, 3rem);
   margin-bottom: var(--space-6);
   line-height: var(--line-height-tight);
 }
