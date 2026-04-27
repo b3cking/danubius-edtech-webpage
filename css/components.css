@@ -108,8 +108,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
+  background-color: white;
   z-index: var(--z-fixed);
   border-bottom: 1px solid var(--color-neutral-100);
   transition: all var(--transition-base);
@@ -1020,9 +1019,6 @@
 .footer__logo-img {
   height: 62px;
   width: auto;
-  background: white;
-  padding: 2px 4px;
-  border-radius: 8px;
 }
 
 .footer__tagline {
